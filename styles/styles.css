@@ -1,54 +1,80 @@
-/* Permite que todo se pegue a la izquierda */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-nav{
-    background-color: black;
-    height: 100px;
+/* Estilos de la barra de navegación */
+nav {
+    background-color: black; 
+    height: 110px; 
     display: flex;
     align-items: center;
 }
 
-ul{
+ul {
     width: 100%;
-    /* border: 2px rgb(0, 42, 255)solid; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-li{
-    /* border: 2px red solid; */
+li {
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
-    padding: 5px;
-    border-radius: 5px;
-    transition: all 150ms;
+    padding: 22px;
+    border-radius: 10px; 
+    transition: all 150ms; 
 }
 
-li:hover{
+li:hover {
     background-color: rgb(55, 53, 53);
     transform: scale(1.1);
 }
 
-img{
-    width: 150px;
+img {
+    width: 90px; 
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-/* .contenedorPadre{
-    border: 5px red solid;
-    height: 500px;
-    display: flex;
+/* Estilos para la barra de búsqueda */
+header input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 400px;
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; 
+    
 }
 
-.contenedorHijo{
-    border: 5px rgb(21, 0, 255)solid;
-} */
+header button {
+    background-color: rgb(85, 85, 85);
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 11px 15px;
+    margin-left: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 150ms; 
+}
+
+header button:hover {
+    background-color: #e41212; 
+}
+header input[type="text"]:hover {
+    background-color: #f2f2f2; 
+}
+
+
+
+
+
+
+
