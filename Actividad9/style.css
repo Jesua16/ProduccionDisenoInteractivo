@@ -1,0 +1,61 @@
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+    .boton button{
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #b81111;
+        color: #fff;
+        border-radius: 3px;
+        transition: background-color 0.1s ease, color 0.1s ease,;
+    }
+
+    .boton button:hover {
+        background-color: #df7878;
+        color: #000000;
+    }
+
+.barradecarga{
+
+        margin-top: 40px;
+        height: 20px;
+        background-color: #b81111;
+        animation: carga 3s ease-out infinite; 
+    }
+    
+    
+    @keyframes carga {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+
+.tarjeta {
+        margin-top: 50px;
+        border: 1px solid #ddd;
+        width: fit-content;
+        transition: transform 0.3s ease, transform-origin 0.3s ease;
+    }
+    
+    .tarjeta .contenido {
+        padding: 10px;
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align:center;
+    }
+
+    .tarjeta:hover {
+        transform: scale(1.1) rotate(10deg);
+    }
+    
+    
