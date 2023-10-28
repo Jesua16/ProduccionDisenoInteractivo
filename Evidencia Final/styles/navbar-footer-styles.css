@@ -1,0 +1,112 @@
+/* Estilos de la barra de navegación */
+nav {
+    background-color: black; 
+    height: 110px; 
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    padding: 22px;
+    border-radius: 10px; 
+    transition: all 150ms; 
+}
+
+header li:hover {
+    background-color: rgb(55, 53, 53);
+    transform: scale(1.1);
+}
+
+img {
+    width: 90px; 
+}
+
+/* Personalización de iconos */
+
+i {
+    font-size: 24px; 
+    color: white; 
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+
+i:hover{
+    color: #ff0000;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 150ms; 
+    
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+}
+
+/* Estilos para la barra de búsqueda */
+header input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 400px;
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; 
+    
+}
+
+header button, button {
+    background-color: rgb(49, 49, 49);
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 11px 15px;
+    margin-left: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 150ms; 
+}
+
+header button:hover,button:hover {
+    background-color: #e41212; 
+}
+header input[type="text"]:hover {
+    background-color: #f2f2f2; 
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.884);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 960px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+.footer-content p {
+    font-size: 16px; /* Tamaño de fuente del texto del footer */
+    display: inline; /* Hace que el texto se muestre en línea */
+}
+
+.wrapper {
+    min-height: 81vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

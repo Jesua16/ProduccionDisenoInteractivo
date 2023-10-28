@@ -1,0 +1,25 @@
+/* Estilos para el formulario */
+form {
+    text-align: left;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="tel"],
+.container input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/navbar-footer-styles.css">
+    <link rel="stylesheet" href="./styles/styles-contacto.css">
     <link rel="stylesheet" href="./styles/styles-forms.css">
     <script src="https://kit.fontawesome.com/4a6d3742d5.js" crossorigin="anonymous"></script>
     <title>Berserk</title>
@@ -31,16 +32,15 @@
                         <button type="submit">Buscar</button>
                     </form>
                 </div>
-                
-                <!-- Login -->
+                <!-- Iniciar Sesión -->
                 <li><a href="login.html">Iniciar Sesión<i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Login Formulario -->
-    <div class="container">
-        <h1>Registro</h1>
+    <div class="wrapper">
+    <main class="container">
+        <h1>Contacto</h1>
+        <label>Si tienes alguna pregunta o comentario, no dudes en contactarnos.</label>
         <form action="#" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -48,32 +48,13 @@
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required>
     
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
     
-            <label for="confirm-password">Confirmar Contraseña:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-    
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-    
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required>
-    
-            <label for="pais">País:</label>
-            <input type="text" id="pais" name="pais" required>
-    
-            <label for="ciudad">Ciudad:</label>
-            <input type="text" id="ciudad" name="ciudad" required>
-    
-            <div class="login">
-                <p><a href="login.html">¿Ya tienes cuenta? Inicia sesión aquí</a></p>
-                <br>
-                <button type="submit">Registrarse</button>
-            </div>
+            <button type="submit">Enviar</button>
         </form>
-    </div>
-
+    </main>
+</div>
     <footer>
         <div class="footer-content">
             <p>Contáctanos: contact@example.com | Teléfono: (123) 456-7890</p>
@@ -82,7 +63,7 @@
             <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
         </div>
     </footer>
-    
 
 </body>
 </html>
+
