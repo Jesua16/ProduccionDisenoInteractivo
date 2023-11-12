@@ -1,9 +1,9 @@
-/* tranisción para los elementos que se les hace escalado(ojos y boca) */
+/* transición para los elementos que se les hace escalado(ojos y boca) */
 line, ellipse  {
     transition: transform 0.3s; 
 }
 
-/* cuándos te toque cualquier elemento del svg se activa el hover en los ojos y la boca */
+/* cuándo se te toque cualquier elemento del svg se activa el hover en los ojos y la boca */
 
 svg:hover line, svg:hover ellipse  {
     transform: scale(1.08); 
