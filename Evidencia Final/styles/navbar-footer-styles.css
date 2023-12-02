@@ -1,16 +1,16 @@
 /* Estilos de la barra de navegación */
 nav {
-    background-color: black;
-    height: 110px;
+    background-color: black; 
+    height: 110px; 
     display: flex;
     align-items: center;
 }
 
 ul {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
 }
 
 li {
@@ -18,81 +18,89 @@ li {
 }
 
 header li:not(.search-container):hover {
-    transform: translateY(-4px);
-}
-.burger-menu {
-    display: none;
+    transform: translateY(-4px); 
+
 }
 .logo-mobile-only {
     display: none;
 }
 
 img {
-    width: 90px;
+    width: 90px; 
 }
+
 
 i {
-    font-size: 24px;
-    color: white;
-    margin: 0 10px;
+    font-size: 24px; 
+    color: white; 
+    margin-right: 10px; 
+    margin-left: 10px; 
 }
 
-i:hover {
+i:hover{
     color: #ff0000;
 }
+
 
 a {
     color: white;
     text-decoration: none;
-    transition: all 150ms;
+    transition: all 150ms; 
+    
 }
 
-a:hover {
+a:hover{
     color: rgb(255, 0, 0);
 }
 
 /* Estilos para la barra de búsqueda */
 header input[type="text"] {
     padding: 10px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
     font-size: 16px;
-    width: 400px;
+    width: 400px; /* o 100% si deseas que sea responsivo */
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc;
+    
 }
 
 header button, button {
     background-color: rgb(49, 49, 49);
-    color: white;
+    color: white; 
     border: none;
     border-radius: 5px;
     padding: 11px 15px;
-    margin-left: 5px;
+    margin-left: 5px; 
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 150ms;
+    transition: background-color 150ms; 
 }
 
-header button:hover, button:hover {
-    background-color: #e41212;
+header button:hover,button:hover {
+    background-color: #e41212; 
+}
+header input[type="text"]:hover {
+    background-color: #f2f2f2; 
 }
 
 /* Footer */
+
 footer {
     background-color: rgba(0, 0, 0, 0.884);
-    color: white;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
 
 .footer-content {
-    max-width: 960px;
-    margin: 0 auto;
+    max-width: 960px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
 }
 
 .footer-content p {
-    font-size: 16px;
-    display: inline;
+    font-size: 16px; /* Tamaño de fuente del texto del footer */
+    display: inline; /* Hace que el texto se muestre en línea */
 }
 
 .wrapper {
@@ -102,68 +110,132 @@ footer {
     justify-content: space-between;
 }
 
-/* Estilos para dispositivos móviles */
+
+/* Esconder el botón de menú en pantallas grandes */
+.burger-menu {
+    display: none;
+}
+
+
 @media only screen and (max-width: 600px) {
     nav {
+        background-color: black;
         height: 85px;
-        position: fixed;
+        width: 100%; /* Asegúrate de que la barra de navegación ocupe toda la anchura */
+        position: fixed; /* Fija la barra de navegación en la parte superior de la pantalla */
         top: 0;
         left: 0;
-        width: 100%;
-        z-index: 99;
+        display: flex;
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center;
+        z-index: 99; /* Asegúrate de que está por encima de otros elementos */
     }
-
     .burger-menu {
         display: block;
         position: fixed;
         top: 20px;
         right: 20px;
-        z-index: 100;
+        z-index: 100; /* Asegúrate de que el botón esté por encima de otros elementos */
     }
 
     nav ul {
         position: fixed;
         top: 0;
         left: -100%;
-        width: 60%;
-        height: 100vh;
+        width: 60%; /* Ancho del menú, puede ser menos del 100% */
+        height: 100vh; /* Altura completa de la ventana */
         background-color: #000;
-        padding-top: 60px;
-        z-index: 50;
+        padding-top: 60px; /* Espacio en la parte superior para el botón del menú */
         transition: left 0.3s;
+        z-index: 50; /* Por debajo del botón del menú, pero por encima del contenido de la página */
     }
 
     nav ul.active {
-        left: 0;
+        left: 0; /* Muestra el menú */
     }
 
     nav ul li {
-        padding: 15px 20px;
-        border-bottom: 1px solid #333;
+        padding: 15px 20px; /* Espacio adicional para cada elemento del menú */
+        border-bottom: 1px solid #333; /* Separador entre elementos del menú */
     }
 
+
+    header nav ul {
+        display: block; /* Cambia el display a block para organizar los li en vertical */
+        position: fixed;
+        top: 0;
+        left: -100%; /* Asegúrate de que el menú esté oculto inicialmente */
+        width: 60%; /* O el ancho que desees para tu menú */
+        height: 100%;
+        background-color: #000;
+        overflow-y: auto; /* Agrega scroll si el contenido es más largo que la pantalla */
+        transition: left 0.3s; /* Suaviza la transición */
+        z-index: 20; /* Asegúrate de que esté por encima de otros elementos */
+        padding-top: 60px; /* Espacio para el botón del menú */
+        padding-bottom: 20px; /* Espacio adicional en la parte inferior */
+    }
+
+    header nav ul.active {
+        left: 0; /* Muestra el menú cuando esté activo */
+    }
+
+    header nav ul li {
+        padding: 15px; /* Agrega padding para cada li */
+        display: block; /* Hace que cada li se muestre en una nueva línea */
+        text-align: center; /* Centra el texto dentro del li */
+        border-bottom: 1px solid #333; /* Opcional: agrega una línea divisoria */
+    }
+
+    /* Estilos para ocultar la barra de navegación de escritorio y mostrar el menú de hamburguesa */
     .nav-desktop {
         display: none;
     }
 
+    .burger-menu {
+        display: block;
+        cursor: pointer; /* Cambia el cursor a pointer para indicar que es clickeable */
+    }
+
+    /* Oculta la barra de búsqueda para dispositivos móviles si lo deseas */
     .search-container {
         display: none;
     }
+    
+    /* Ajustes adicionales para los elementos del menú */
+    .nav-icon {
+        font-size: 30px; /* Ajusta el tamaño del icono si es necesario */
+        color: white;
+    }
+
+    /* Asegúrate de que todos los elementos de enlace 'a' dentro del ul también estén en bloque y con ancho completo */
+    header nav ul li a {
+        display: block;
+        width: 100%;
+    }
 
     .logo-mobile-only {
-        display: block;
+        display: block; /* o flex si necesitas centrarlo con flexbox */
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 101;
+        z-index: 101; /* Asegura que esté por encima de otros elementos */
     }
 
     .logo-mobile {
-        width: 90px;
-        height: auto;
+        height: auto; /* O la altura que desees */
+        width: 90px; /* O la anchura que desees */
     }
+
+    /* Ajusta la barra de navegación para móviles */
+    nav {
+        justify-content: space-between;
+    }
+
+    /* Ajustes adicionales para tu menú y otros elementos si es necesario */
 
     footer {
         display: none;
     }
 }
+
+
