@@ -1,0 +1,38 @@
+.store-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: #f8f9fa; /* Un fondo claro para destacar la sección */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.store-message {
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px; /* Añade un margen a la derecha para separar el texto del mapa */
+    border-right: 2px solid #ddd; /* Una línea para separar visualmente el texto del mapa */
+}
+
+.store-message h2 {
+    color: #333;
+    font-size: 1.5em; /* Un tamaño más grande para el título */
+}
+
+.store-message p,
+.store-message address {
+    color: #666; /* Un color más oscuro para una mejor legibilidad */
+}
+
+.map-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+}

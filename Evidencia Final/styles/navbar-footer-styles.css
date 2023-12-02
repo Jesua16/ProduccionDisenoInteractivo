@@ -14,16 +14,12 @@ ul {
 }
 
 li {
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-    padding: 22px;
-    border-radius: 10px; 
-    transition: all 150ms; 
+    transition: transform 0.3s;
 }
 
-header li:hover {
-    background-color: rgb(55, 53, 53);
-    transform: scale(1.1);
+header li:not(.search-container):hover {
+    transform: translateY(-4px); 
+
 }
 
 img {
@@ -43,6 +39,7 @@ i:hover{
     color: #ff0000;
 }
 
+
 a {
     color: white;
     text-decoration: none;
@@ -60,9 +57,9 @@ header input[type="text"] {
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    width: 400px;
+    width: 400px; /* o 100% si deseas que sea responsivo */
     background-color: #f2f2f2; 
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     
 }
 
@@ -110,3 +107,4 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 }
+

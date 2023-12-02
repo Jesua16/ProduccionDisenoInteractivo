@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="./styles/navbar-footer-styles.css">
     <link rel="stylesheet" href="./styles/animation.css">
     <link rel="stylesheet" href="./styles/sections.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="./styles/geolocalizacion.css">
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
 
     <script src="https://kit.fontawesome.com/4a6d3742d5.js" crossorigin="anonymous"></script>
     <title>Berserk</title>
 </head>
-<body>
 
+    
     <div class="pantalla-carga">
         <div class="spinner"></div>
-        <img src="/ProduccionDisenoInteractivo/Evidencia Final/img/Berserk.webp">
+        <img src="img/Berserk.webp" alt="Berserk Logo">
     </div>
 
     <header>
@@ -23,124 +26,179 @@
         <nav>
             <ul>
                 <!-- Logo -->
-                <div class="logo">
-                <li><a href="index.html"><img src="img/Berserk.webp" alt=""></a></li>
-                </div>
+                <li class="logo"><a href="index.html"><img src="img/Berserk.webp" alt="Berserk Logo"></a></li>
                 
                 <!-- Elementos de navegación -->
+                
                 <li><a href="index.html"><i class="fa-solid fa-house "></i>Inicio</a></li>
                 <li><a href="#"><i class="fa-solid fa-paperclip"></i>Recomendados</a></li>
                 <li><a href="#"><i class="fa-solid fa-book-open"></i>Mangas</a></li>
-                <li><a href="contacto.html"><i class="fa-regular fa-address-card"></i></i>Contacto</a></li>
+                <li><a href="contacto.html"><i class="fa-regular fa-address-card"></i>Contacto</a></li>
                 <!-- Barra de búsqueda -->
-                <div class="search-container">
+                <li class="search-container">
                     <form action="#" method="get">
                         <input type="text" name="search" placeholder="Buscar...">
-                        <button type="submit">Buscar</button>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
-                </div>
+                </li>
                 <!-- Iniciar Sesión -->
                 <li><a href="login.html">Iniciar Sesión<i class="fa-solid fa-user"></i></a></li>
-
-        
             </ul>
         </nav>
-    </header>
+    </header>   
+    <body>
+      
+      <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="img/carousel.jpg" alt="Imagen 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="img/carousel2.jpg" alt="Imagen 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="img/carousel3.png" alt="Imagen 3">
+        </div>
+        
+    </div>
+
+
+  
     <div class="wrapper">
     <main>
         <section>
           <h2>Productos populares</h2>
-          <ul>
+          <ul class="product-list">
+            
             <li class="product">
-            <img src="./img/product.webp" alt="Producto 1"></a>
-              <h3>Producto 1</h3>
-              <p>Descripción del producto 1.</p>
-              <p>Precio: $99.99</p>
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
               <button>Agregar al carrito</button>
             </li>
+
+
             <li class="product">
-            <img src="./img/product.webp" alt="Producto 2"></a>
-              <h3>Producto 2</h3>
-              <p>Descripción del producto 2.</p>
-              <p>Precio: $49.99</p>
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
               <button>Agregar al carrito</button>
             </li>
+
+
             <li class="product">
-            <img src="./img/product.webp" alt="Producto 3"></a>
-              <h3>Producto 3</h3>
-              <p>Descripción del producto 3.</p>
-              <p>Precio: $149.99</p>
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
               <button>Agregar al carrito</button>
             </li>
+
+
             <li class="product">
-              <img src="./img/product.webp" alt="Producto 4"></a>
-                <h3>Producto 4</h3>
-                <p>Descripción del producto 4.</p>
-                <p>Precio: $149.99</p>
-                <button>Agregar al carrito</button>
-              </li>
-              <li class="product">
-                <img src="./img/product.webp" alt="Producto 5"></a>
-                  <h3>Producto 5</h3>
-                  <p>Descripción del producto 5.</p>
-                  <p>Precio: $149.99</p>
-                  <button>Agregar al carrito</button>
-                </li>
-                <li class="product">
-                  <img src="./img/product.webp" alt="Producto 6"></a>
-                    <h3>Producto 6</h3>
-                    <p>Descripción del producto 6.</p>
-                    <p>Precio: $149.99</p>
-                    <button>Agregar al carrito</button>
-                  </li>
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
+              <button>Agregar al carrito</button>
+            </li>
+
+
+            <li class="product">
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
+              <button>Agregar al carrito</button>
+            </li>
+
+
+            <li class="product">
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
+              <button>Agregar al carrito</button>
+            </li>
           </ul>
         </section>
-
+<section>
+        <div class="store-info-container">
+          <div class="store-message">
+              <h2>Visita nuestra tienda física!</h2>
+              <p>Encuentra nuestros productos y disfruta de una experiencia única en:</p>
+              <address>
+                  Gran Plaza Cancún<br>
+                  518, Av. Nichupté Supermanzana 51<br>
+                  Manzana 18, Sin Nombre, 77536<br>
+                  Cancún, Q.R.
+              </address>
+              <!-- Puedes agregar más información o incluso imágenes aquí -->
+          </div>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3143450095013!2d-86.85649768829099!3d21.13988498045623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b3fe2c55553%3A0xdb04f80c48e644ad!2sGran%20Plaza%20Canc%C3%BAn!5e0!3m2!1ses-419!2smx!4v1701486120268!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+    </section>
         <section>
           <h2>Productos nuevos</h2>
-          <ul>
+          <ul class="product-list">
+            
             <li class="product">
-            <img src="./img/product.webp" alt="Producto 1"></a>
-              <h3>Producto 1</h3>
-              <p>Descripción del producto 1.</p>
-              <p>Precio: $99.99</p>
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
               <button>Agregar al carrito</button>
             </li>
+
+
             <li class="product">
-            <img src="./img/product.webp" alt="Producto 2"></a>
-              <h3>Producto 2</h3>
-              <p>Descripción del producto 2.</p>
-              <p>Precio: $49.99</p>
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
               <button>Agregar al carrito</button>
             </li>
+
+
             <li class="product">
-            <img src="./img/product.webp" alt="Producto 3"></a>
-              <h3>Producto 3</h3>
-              <p>Descripción del producto 3.</p>
-              <p>Precio: $149.99</p>
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
               <button>Agregar al carrito</button>
             </li>
+
+
             <li class="product">
-              <img src="./img/product.webp" alt="Producto 4"></a>
-                <h3>Producto 4</h3>
-                <p>Descripción del producto 4.</p>
-                <p>Precio: $149.99</p>
-                <button>Agregar al carrito</button>
-              </li>
-              <li class="product">
-                <img src="./img/product.webp" alt="Producto 5"></a>
-                  <h3>Producto 5</h3>
-                  <p>Descripción del producto 5.</p>
-                  <p>Precio: $149.99</p>
-                  <button>Agregar al carrito</button>
-                </li>
-                <li class="product">
-                  <img src="./img/product.webp" alt="Producto 6"></a>
-                    <h3>Producto 6</h3>
-                    <p>Descripción del producto 6.</p>
-                    <p>Precio: $149.99</p>
-                    <button>Agregar al carrito</button>
-                  </li>
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
+              <button>Agregar al carrito</button>
+            </li>
+
+
+            <li class="product">
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
+              <button>Agregar al carrito</button>
+            </li>
+
+
+            <li class="product">
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
+              <button>Agregar al carrito</button>
+            </li>
+
+            <!-- Repeated product items removed for brevity -->
           </ul>
         </section>
     
@@ -153,6 +211,6 @@
             <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+     <script src="./JavaScript/carousel.js"></script>
 </body>
-</html>
+</html> 

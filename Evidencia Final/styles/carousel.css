@@ -1,0 +1,19 @@
+.carousel-container {
+  overflow: hidden;
+  width: 100%; /* Ancho del carrusel al 100% del viewport */
+  height: 550px; /* Altura deseada del carrusel */
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cortar la imagen para que llene el espacio */
+  transition: transform 1s ease;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
