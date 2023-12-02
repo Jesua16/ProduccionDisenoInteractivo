@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/navbar-footer-styles.css">
-    <link rel="stylesheet" href="./styles/styles-contacto.css">
-    <link rel="stylesheet" href="./styles/styles-forms.css">
-    <script src="https://kit.fontawesome.com/4a6d3742d5.js" crossorigin="anonymous"></script>
-    <title>Berserk</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/navbar-footer-styles.css">
+        <link rel="stylesheet" href="styles/styles-forms.css">
+        <link rel="stylesheet" href="styles/banner.css">
+        <script src="https://kit.fontawesome.com/4a6d3742d5.js" crossorigin="anonymous"></script>
+
+        <title>Berserk</title>
+        
+    </head>
     <header>
-        <!-- Barra de navegación -->
+        <!-- Botón de menú para dispositivos móviles -->
+    <button class="burger-menu" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <!-- Barra de navegación -->
         <nav>
+
+        <div class="logo-mobile-only">
+            <a href="index.html" class="logo-link">
+                <img src="img/Berserk.webp" alt="Logo Móvil" class="logo-mobile">
+            </a>
+        </div>
+
             <ul>
                 <!-- Logo -->
                 <li class="logo"><a href="index.html"><img src="img/Berserk.webp" alt="Berserk Logo"></a></li>
+                
                 <!-- Elementos de navegación -->
+                
                 <li><a href="index.html"><i class="fa-solid fa-house "></i>Inicio</a></li>
                 <li><a href="#"><i class="fa-solid fa-paperclip"></i>Recomendados</a></li>
                 <li><a href="#"><i class="fa-solid fa-book-open"></i>Mangas</a></li>
-                <li><a href="contacto.html" class="active"><i class="fa-regular fa-address-card"></i>Contacto</a></li>
+                <li><a href="contacto.html"><i class="fa-regular fa-address-card"></i>Contacto</a></li>
                 <!-- Barra de búsqueda -->
                 <li class="search-container">
                     <form action="#" method="get">
@@ -33,38 +47,47 @@
                 <li><a href="login.html">Iniciar Sesión<i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
-    </header>
-    <div class="wrapper">
-        <main class="container">
-            <h1>Contacto</h1>
-            <p>Si tienes alguna pregunta o comentario, no dudes en contactarnos.</p>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn-submit">Enviar</button>
-                </div>
-            </form>
-        </main>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <p>Contáctanos: contact@example.com | Teléfono: (123) 456-7890</p>
-            <p>Síguenos en las redes sociales: <a href="https://facebook.com/tuempresa">Facebook</a> | <a href="https://twitter.com/tuempresa">Twitter</a></p>
-            <p><a href="about.html">Acerca de nosotros</a> | <a href="terms.html">Términos y condiciones</a> | <a href="privacy.html">Política de privacidad</a></p>
-            <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    </header>   
+    <body>
 
-</body>
+        <div class="banner-animado">
+            <img src="./img/banner2.jpg" alt="Descripción">
+        </div>
+        
+        <div class="wrapper">
+            <main class="container">
+                <h1>Contacto</h1>
+                <p>Si tienes alguna pregunta o comentario, no dudes en contactarnos.</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </body>
+
+<!-- footer -->
+<footer>
+    <div class="footer-content">
+        <p>Contáctanos: contact@example.com | Teléfono: (123) 456-7890</p>
+        <p>Síguenos en las redes sociales: <a href="https://facebook.com/tuempresa">Facebook</a> | <a href="https://twitter.com/tuempresa">Twitter</a></p>
+        <p><a href="#">Acerca de nosotros</a> | <a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
+        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!-- scripts -->
+<script src="./JavaScript/burgerbutton.js"></script>
 </html>

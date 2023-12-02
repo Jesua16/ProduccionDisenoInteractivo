@@ -1,16 +1,16 @@
 /* Estilos de la barra de navegación */
 nav {
-    background-color: black; 
-    height: 110px; 
+    background-color: black;
+    height: 110px;
     display: flex;
     align-items: center;
 }
 
 ul {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
 li {
@@ -18,87 +18,81 @@ li {
 }
 
 header li:not(.search-container):hover {
-    transform: translateY(-4px); 
-
+    transform: translateY(-4px);
+}
+.burger-menu {
+    display: none;
+}
+.logo-mobile-only {
+    display: none;
 }
 
 img {
-    width: 90px; 
+    width: 90px;
 }
-
-/* Personalización de iconos */
 
 i {
-    font-size: 24px; 
-    color: white; 
-    margin-right: 10px; 
-    margin-left: 10px; 
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
 }
 
-i:hover{
+i:hover {
     color: #ff0000;
 }
-
 
 a {
     color: white;
     text-decoration: none;
-    transition: all 150ms; 
-    
+    transition: all 150ms;
 }
 
-a:hover{
+a:hover {
     color: rgb(255, 0, 0);
 }
 
 /* Estilos para la barra de búsqueda */
 header input[type="text"] {
     padding: 10px;
-    border: none;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    width: 400px; /* o 100% si deseas que sea responsivo */
-    background-color: #f2f2f2; 
-    border: 1px solid #ccc;
-    
+    width: 400px;
 }
 
 header button, button {
     background-color: rgb(49, 49, 49);
-    color: white; 
+    color: white;
     border: none;
     border-radius: 5px;
     padding: 11px 15px;
-    margin-left: 5px; 
+    margin-left: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 150ms; 
+    transition: background-color 150ms;
 }
 
-header button:hover,button:hover {
-    background-color: #e41212; 
-}
-header input[type="text"]:hover {
-    background-color: #f2f2f2; 
+header button:hover, button:hover {
+    background-color: #e41212;
 }
 
 /* Footer */
-
 footer {
     background-color: rgba(0, 0, 0, 0.884);
-    color: #ffffff;
+    color: white;
     padding: 20px 0;
     text-align: center;
 }
 
 .footer-content {
-    max-width: 960px; /* Ancho máximo del contenido del footer */
-    margin: 0 auto; /* Centrar el contenido horizontalmente */
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .footer-content p {
-    font-size: 16px; /* Tamaño de fuente del texto del footer */
-    display: inline; /* Hace que el texto se muestre en línea */
+    font-size: 16px;
+    display: inline;
 }
 
 .wrapper {
@@ -108,3 +102,68 @@ footer {
     justify-content: space-between;
 }
 
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    nav {
+        height: 85px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .burger-menu {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        background-color: #000;
+        padding-top: 60px;
+        z-index: 50;
+        transition: left 0.3s;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        padding: 15px 20px;
+        border-bottom: 1px solid #333;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .logo-mobile-only {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 101;
+    }
+
+    .logo-mobile {
+        width: 90px;
+        height: auto;
+    }
+
+    footer {
+        display: none;
+    }
+}

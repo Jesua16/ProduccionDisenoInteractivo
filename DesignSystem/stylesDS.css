@@ -1,96 +1,90 @@
-*{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+.fa-xs { font-size: 0.75em; }
+.fa-sm { font-size: 0.875em; }
+.fa-lg { font-size: 1.25em; }
+.fa-2x { font-size: 2em; }
+
+.font-xs { font-size: 12px; }
+.font-sm { font-size: 14px; }
+.font-lg { font-size: 18px; }
+.font-xl { font-size: 24px; }
+
+.color-sample {
+display: inline-block;
+width: 24px;
+height: 24px;
+margin: 0 10px;
+border: 1px solid #000; /* para que colores claros se destaquen */
 }
 
-section{
-    /* border: 2px red solid; */
-    width: 90%;
-}
-
-.articleTop{
-    
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.logo, .paletaTipografica{
-    width: 45%;
-    /* border: 2px blue solid; */
-}
-
-.articleTop .logo img{
-    width: 100%;
-}
-section .articleBottom{
-    display: flex;
-    justify-content: space-evenly;
-}
-section .articleBottom .iconos, .paletaDeColores{
-    /* border: 2px blue solid; */
-    width: 45%;
-    /* border: 2px red solid; */
-}
-
-.section .articleBottom .iconos li{
-    list-style: none;
-}
-
-section .paletaDeColores{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-}
-
-section .paletaDeColores div{
-width: 50px;
-height: 50px;
-border: 2px black solid;
-}
-
-.color1{
-background-color: black;
-}
-
-.color2{
-    background-color: rgb(55, 53, 53);
-    
-}
-.color3{
-    background-color: rgba(0, 0, 0, 0.7);
-}
-.color4{
-    background-color: white;
-}
-.color5{
-    background-color: rgb(63, 0, 0);
-}
-.color6{
-    background-color: rgb(126, 0, 0);
-}
-.color7{
-    background-color: rgb(190, 0, 0);
-}
-.color8{
-    background-color: rgba(255, 0, 0);
+.image-sample {
+width: auto; /* o un ancho específico */
+height: 100px; /* o la altura deseada */
+margin: 10px;
+border: 1px solid #ccc; /* para imágenes con fondo claro */
 }
 
 
+.btn {
+padding: 10px 20px;
+margin: 5px;
+border: none;
+border-radius: 4px;
+color: white;
+cursor: pointer;
+background-color: rgb(49, 49, 49);
+margin-left: 5px;
+font-size: 16px;
+transition: background-color 150ms;
+}
 
+.btn button:hover, button:hover {
+background-color: #e41212;
+}
 
+.input-sample, .select-sample, textarea {
+width: 200px;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
 
+/* Spacing styles */  .spacing-sample {
+background-color: #eee;
+width: 100%;
+margin: 10px 0;
+border-radius: 4px;
+}
 
-.articleBottom{
-    margin-top: 30px;
+/* Estilos generales para formularios */
+form {
+    text-align: left; 
+    color: #ffffff;
+}
+
+/* Estilos para etiquetas (labels) de los campos del formulario */
+label {
+    display: block; /* Cada etiqueta en su propia línea */
+    margin-bottom: 5px; 
+    font-weight: bold; /* Texto en negrita para resaltar la etiqueta */
+    color: #ccc; 
+}
+
+/* Estilos para contenedores de entrada y áreas de texto */
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="tel"],
+.container input[type="password"],
+textarea {
+    width: 200px; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
 }
 
 
-i {
-    font-size: 24px; 
-    color: rgb(0, 0, 0); 
-    margin-right: 10px; 
-    margin-left: 10px;
-}
+
+
+
+

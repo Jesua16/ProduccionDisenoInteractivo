@@ -1,34 +1,30 @@
+/* Estilos globales para un comportamiento consistente de elementos */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    box-sizing: border-box; /* Todos los elementos incluirán padding y border en el ancho total */
+    margin: 0; /* Remueve márgenes por defecto */
+    padding: 0; /* Remueve paddings por defecto */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente consistente en toda la página */
 }
 
-/* Fondo  */
-
-
-
-body{
-    background-color: rgb(180, 180, 180);
-    
+/* Estilo del fondo para el cuerpo de la página */
+body {
+    background-color: rgb(180, 180, 180); 
 }
 
+/* Estilos para contenedores centrados con sombra y fondo oscuro */
 .container {
-    max-width: 600px; 
+    max-width: 600px; /* Ancho máximo para mantener el contenido legible */
     margin: 20px auto; 
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.884); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave para resaltar el contenedor */
     border-radius: 10px; 
-    background-color: rgba(0, 0, 0, 0.884);
-
-    margin-bottom: 120px;
+    margin-bottom: 120px; 
 }
 
+/* Estilos para el título principal */
 h1 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff;
+    margin-bottom: 20px; 
+    color: #ffffff; 
 }

@@ -1,38 +1,66 @@
+/* Estilo del contenedor de información de la tienda */
 .store-info-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background: #f8f9fa; /* Un fondo claro para destacar la sección */
+    background: #f8f9fa; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo para el mensaje dentro de la tienda */
 .store-message {
     flex: 1;
     padding: 20px;
-    margin-right: 20px; /* Añade un margen a la derecha para separar el texto del mapa */
-    border-right: 2px solid #ddd; /* Una línea para separar visualmente el texto del mapa */
+    margin-right: 20px; /* Separación del texto del mapa */
+    border-right: 2px solid #ddd; /* Línea divisoria entre texto y mapa */
 }
 
+/* Estilo para el título dentro del mensaje de la tienda */
 .store-message h2 {
     color: #333;
-    font-size: 1.5em; /* Un tamaño más grande para el título */
+    font-size: 1.5em; 
 }
 
+/* Estilo para párrafos y direcciones dentro del mensaje de la tienda */
 .store-message p,
 .store-message address {
-    color: #666; /* Un color más oscuro para una mejor legibilidad */
+    color: #666; 
 }
 
+/* Estilo para el contenedor del mapa */
 .map-container {
     flex: 1;
     padding: 20px;
 }
 
+/* Estilo para el iframe del mapa */
 .map-container iframe {
     width: 100%;
     height: 100%;
     border-radius: 8px;
     border: none;
+}
+
+/* Ajustes de estilo para dispositivos móviles (máximo 600px) */
+@media only screen and (max-width: 600px) {
+    .store-info-container {
+        flex-direction: column; 
+    }
+
+    .store-message {
+        margin-right: 0; /* Sin margen derecho en móviles */
+        border-right: none; /* Sin línea divisoria */
+        padding-bottom: 20px; /* Espaciado debajo del mensaje */
+        border-bottom: 2px solid #ddd; /* Línea divisoria en la parte inferior */
+    }
+
+    .map-container {
+        padding-top: 20px; /* Espaciado encima del mapa */
+    }
+
+    .map-container iframe {
+        height: 300px; /* Altura fija para el mapa en móviles */
+    }
 }

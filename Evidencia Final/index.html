@@ -1,82 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlaces a hojas de estilo externas para la presentación de la página -->
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/navbar-footer-styles.css">
     <link rel="stylesheet" href="./styles/animation.css">
     <link rel="stylesheet" href="./styles/sections.css">
     <link rel="stylesheet" href="./styles/carousel.css">
     <link rel="stylesheet" href="./styles/geolocalizacion.css">
+    <link rel="stylesheet" href="./styles/banner.css">
     <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
-
     <script src="https://kit.fontawesome.com/4a6d3742d5.js" crossorigin="anonymous"></script>
+
     <title>Berserk</title>
+
 </head>
 
-    
+    <!-- Pantalla de carga con un spinner y el logo de Berserk -->
     <div class="pantalla-carga">
         <div class="spinner"></div>
         <img src="img/Berserk.webp" alt="Berserk Logo">
     </div>
 
+    <!-- Encabezado de la página que contiene la barra de navegación -->
     <header>
-        <!-- Barra de navegación -->
+
+        <!-- Botón de menú para dispositivos móviles -->
+      <button class="burger-menu" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Barra de navegación -->
         <nav>
+          <div class="logo-mobile-only">
+            <a href="index.html" class="logo-link"><img src="img/Berserk.webp" alt="Logo Móvil" class="logo-mobile"></a>
+          </div>
             <ul>
-                <!-- Logo -->
-                <li class="logo"><a href="index.html"><img src="img/Berserk.webp" alt="Berserk Logo"></a></li>
+
+              <!-- Logo -->
+              <li class="logo"><a href="index.html"><img src="img/Berserk.webp" alt="Berserk Logo"></a></li>
                 
-                <!-- Elementos de navegación -->
+              <!-- Elementos de navegación -->
+              <li><a href="index.html"><i class="fa-solid fa-house "></i>Inicio</a></li>
+              <li><a href="#"><i class="fa-solid fa-paperclip"></i>Recomendados</a></li>
+              <li><a href="#"><i class="fa-solid fa-book-open"></i>Mangas</a></li>
+              <li><a href="contacto.html"><i class="fa-regular fa-address-card"></i>Contacto</a></li>
                 
-                <li><a href="index.html"><i class="fa-solid fa-house "></i>Inicio</a></li>
-                <li><a href="#"><i class="fa-solid fa-paperclip"></i>Recomendados</a></li>
-                <li><a href="#"><i class="fa-solid fa-book-open"></i>Mangas</a></li>
-                <li><a href="contacto.html"><i class="fa-regular fa-address-card"></i>Contacto</a></li>
-                <!-- Barra de búsqueda -->
-                <li class="search-container">
-                    <form action="#" method="get">
-                        <input type="text" name="search" placeholder="Buscar...">
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </li>
-                <!-- Iniciar Sesión -->
-                <li><a href="login.html">Iniciar Sesión<i class="fa-solid fa-user"></i></a></li>
+              <!-- Barra de búsqueda -->
+              <li class="search-container">
+                <form action="#" method="get">
+                <input type="text" name="search" placeholder="Buscar...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </li>
+              <!-- Iniciar Sesión -->
+              <li><a href="login.html">Iniciar Sesión<i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
-    </header>   
-    <body>
-      
-      <div class="carousel-container">
-        <div class="carousel-slide">
-            <img src="img/carousel.jpg" alt="Imagen 1">
-        </div>
-        <div class="carousel-slide">
-            <img src="img/carousel2.jpg" alt="Imagen 2">
-        </div>
-        <div class="carousel-slide">
-            <img src="img/carousel3.png" alt="Imagen 3">
-        </div>
-        
+    </header>  
+
+<!-- Body -->
+<body>
+<!-- Banner animado para dispositivos móviles-->
+  <div class="banner-animado"><img src="./img/banner2.jpg" alt="Descripción"></div>
+
+<!-- Carrusel de imagenes-->
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="img/carousel.jpg" alt="Imagen 1">
     </div>
 
+    <div class="carousel-slide">
+      <img src="img/carousel2.jpg" alt="Imagen 2">
+    </div>
 
-  
-    <div class="wrapper">
+    <div class="carousel-slide">
+      <img src="img/carousel3.png" alt="Imagen 3">
+    </div>    
+  </div>
+
+<!-- Wrapper para los productos-->
+  <div class="wrapper">
     <main>
-        <section>
-          <h2>Productos populares</h2>
+      <!-- Sección de productos-->
+      <section>
+        <h2>Productos populares</h2>
+
           <ul class="product-list">
-            
-            <li class="product">
-              <img src="./img/product.webp" alt="Producto Ejemplo">
-              <h3>Producto Ejemplo</h3>
-              <p>Descripción del producto aquí.</p>
-              <p>Precio: $XX.XX</p>
-              <button>Agregar al carrito</button>
-            </li>
-
 
             <li class="product">
               <img src="./img/product.webp" alt="Producto Ejemplo">
@@ -86,6 +100,13 @@
               <button>Agregar al carrito</button>
             </li>
 
+            <li class="product">
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
+              <button>Agregar al carrito</button>
+            </li>
 
             <li class="product">
               <img src="./img/product.webp" alt="Producto Ejemplo">
@@ -95,6 +116,13 @@
               <button>Agregar al carrito</button>
             </li>
 
+            <li class="product">
+              <img src="./img/product.webp" alt="Producto Ejemplo">
+              <h3>Producto Ejemplo</h3>
+              <p>Descripción del producto aquí.</p>
+              <p>Precio: $XX.XX</p>
+              <button>Agregar al carrito</button>
+            </li>
 
             <li class="product">
               <img src="./img/product.webp" alt="Producto Ejemplo">
@@ -104,7 +132,6 @@
               <button>Agregar al carrito</button>
             </li>
 
-
             <li class="product">
               <img src="./img/product.webp" alt="Producto Ejemplo">
               <h3>Producto Ejemplo</h3>
@@ -113,17 +140,12 @@
               <button>Agregar al carrito</button>
             </li>
 
-
-            <li class="product">
-              <img src="./img/product.webp" alt="Producto Ejemplo">
-              <h3>Producto Ejemplo</h3>
-              <p>Descripción del producto aquí.</p>
-              <p>Precio: $XX.XX</p>
-              <button>Agregar al carrito</button>
-            </li>
           </ul>
-        </section>
-<section>
+      
+      </section>
+
+      <!-- Contenedor Geolocalización-->
+      <section>
         <div class="store-info-container">
           <div class="store-message">
               <h2>Visita nuestra tienda física!</h2>
@@ -134,83 +156,92 @@
                   Manzana 18, Sin Nombre, 77536<br>
                   Cancún, Q.R.
               </address>
-              <!-- Puedes agregar más información o incluso imágenes aquí -->
+
           </div>
+
           <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3143450095013!2d-86.85649768829099!3d21.13988498045623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b3fe2c55553%3A0xdb04f80c48e644ad!2sGran%20Plaza%20Canc%C3%BAn!5e0!3m2!1ses-419!2smx!4v1701486120268!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-      </div>
-    </section>
-        <section>
-          <h2>Productos nuevos</h2>
-          <ul class="product-list">
-            
-            <li class="product">
-              <img src="./img/product.webp" alt="Producto Ejemplo">
-              <h3>Producto Ejemplo</h3>
-              <p>Descripción del producto aquí.</p>
-              <p>Precio: $XX.XX</p>
-              <button>Agregar al carrito</button>
-            </li>
-
-
-            <li class="product">
-              <img src="./img/product.webp" alt="Producto Ejemplo">
-              <h3>Producto Ejemplo</h3>
-              <p>Descripción del producto aquí.</p>
-              <p>Precio: $XX.XX</p>
-              <button>Agregar al carrito</button>
-            </li>
-
-
-            <li class="product">
-              <img src="./img/product.webp" alt="Producto Ejemplo">
-              <h3>Producto Ejemplo</h3>
-              <p>Descripción del producto aquí.</p>
-              <p>Precio: $XX.XX</p>
-              <button>Agregar al carrito</button>
-            </li>
-
-
-            <li class="product">
-              <img src="./img/product.webp" alt="Producto Ejemplo">
-              <h3>Producto Ejemplo</h3>
-              <p>Descripción del producto aquí.</p>
-              <p>Precio: $XX.XX</p>
-              <button>Agregar al carrito</button>
-            </li>
-
-
-            <li class="product">
-              <img src="./img/product.webp" alt="Producto Ejemplo">
-              <h3>Producto Ejemplo</h3>
-              <p>Descripción del producto aquí.</p>
-              <p>Precio: $XX.XX</p>
-              <button>Agregar al carrito</button>
-            </li>
-
-
-            <li class="product">
-              <img src="./img/product.webp" alt="Producto Ejemplo">
-              <h3>Producto Ejemplo</h3>
-              <p>Descripción del producto aquí.</p>
-              <p>Precio: $XX.XX</p>
-              <button>Agregar al carrito</button>
-            </li>
-
-            <!-- Repeated product items removed for brevity -->
-          </ul>
-        </section>
-    
         </div>
-    <footer>
-        <div class="footer-content">
-            <p>Contáctanos: contact@example.com | Teléfono: (123) 456-7890</p>
-            <p>Síguenos en las redes sociales: <a href="https://facebook.com/tuempresa">Facebook</a> | <a href="https://twitter.com/tuempresa">Twitter</a></p>
-            <p><a href="about.html">Acerca de nosotros</a> | <a href="terms.html">Términos y condiciones</a> | <a href="privacy.html">Política de privacidad</a></p>
-            <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-     <script src="./JavaScript/carousel.js"></script>
+      </section>
+
+      <!-- Sección de productos nuevos-->
+      <section>
+        <h2>Productos nuevos</h2>
+        
+        <ul class="product-list">
+          
+          <li class="product">
+            <img src="./img/product.webp" alt="Producto Ejemplo">
+            <h3>Producto Ejemplo</h3>
+            <p>Descripción del producto aquí.</p>
+            <p>Precio: $XX.XX</p>
+            <button>Agregar al carrito</button>
+          </li>
+
+
+          <li class="product">
+            <img src="./img/product.webp" alt="Producto Ejemplo">
+            <h3>Producto Ejemplo</h3>
+            <p>Descripción del producto aquí.</p>
+            <p>Precio: $XX.XX</p>
+            <button>Agregar al carrito</button>
+          </li>
+
+
+          <li class="product">
+            <img src="./img/product.webp" alt="Producto Ejemplo">
+            <h3>Producto Ejemplo</h3>
+            <p>Descripción del producto aquí.</p>
+            <p>Precio: $XX.XX</p>
+            <button>Agregar al carrito</button>
+          </li>
+
+
+          <li class="product">
+            <img src="./img/product.webp" alt="Producto Ejemplo">
+            <h3>Producto Ejemplo</h3>
+            <p>Descripción del producto aquí.</p>
+            <p>Precio: $XX.XX</p>
+            <button>Agregar al carrito</button>
+          </li>
+
+
+          <li class="product">
+            <img src="./img/product.webp" alt="Producto Ejemplo">
+            <h3>Producto Ejemplo</h3>
+            <p>Descripción del producto aquí.</p>
+            <p>Precio: $XX.XX</p>
+            <button>Agregar al carrito</button>
+          </li>
+
+
+          <li class="product">
+            <img src="./img/product.webp" alt="Producto Ejemplo">
+            <h3>Producto Ejemplo</h3>
+            <p>Descripción del producto aquí.</p>
+            <p>Precio: $XX.XX</p>
+            <button>Agregar al carrito</button>
+          </li>
+        
+        </ul>
+      </section>
+    </main>
+  </div>
+
 </body>
+
+<!-- footer -->
+<footer>
+  <div class="footer-content">
+      <p>Contáctanos: contact@example.com | Teléfono: (123) 456-7890</p>
+      <p>Síguenos en las redes sociales: <a href="https://facebook.com/tuempresa">Facebook</a> | <a href="https://twitter.com/tuempresa">Twitter</a></p>
+      <p><a href="#">Acerca de nosotros</a> | <a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
+      <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="./JavaScript/carousel.js"></script>
+  <script src="./JavaScript/burgerbutton.js"></script>
 </html> 

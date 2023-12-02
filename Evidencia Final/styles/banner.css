@@ -1,0 +1,39 @@
+/* Estilos del banner animado */
+.banner-animado {
+  position: relative;
+  overflow: hidden;
+  height: 230px; /* Altura ajustable */
+}
+
+/* Estilos para las imágenes dentro del banner */
+.banner-animado img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animacionBanner 20s infinite alternate;
+  padding-top: 85px; /* Espaciado superior */
+}
+
+/* Animación de entrada y salida para imágenes del banner */
+@keyframes animacionBanner {
+  0%, 100% {
+    opacity: 0.75;
+    transform: scale(1.1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Ocultar banner en pantallas > 600px */
+@media only screen and (min-width: 600px) {
+  .banner-animado { display: none; }
+}
+
+/* Ocultar carrusel en pantallas ≤ 600px */
+@media only screen and (max-width: 600px) {
+  .carousel-container { display: none; }
+}
