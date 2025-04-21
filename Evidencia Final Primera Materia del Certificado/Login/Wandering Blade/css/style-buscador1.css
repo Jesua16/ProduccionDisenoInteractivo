@@ -1,0 +1,33 @@
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    
+  }
+  
+  
+  .buscador form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .buscador input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+  }
+  
+  .buscador button {
+    color: white; /* color del texto */  
+    padding: 5px 10px;
+    background-color: #415A77;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }

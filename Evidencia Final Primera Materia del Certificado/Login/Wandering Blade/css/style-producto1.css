@@ -1,0 +1,59 @@
+/* Agregamos estilos para el contenedor del producto */
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Agregamos estilos para la imagen del producto */
+.product-img {
+  max-width: 100%;
+  height: auto;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+/* Agregamos estilos para el título del producto */
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  grid-column: 2 / 3;
+}
+
+/* Agregamos estilos para la descripción del producto */
+.product-description {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* Agregamos estilos para el precio del producto */
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #415A77;
+  grid-column: 2 / 3;
+ 
+}
+
+/* Agregamos estilos para el botón de compra del producto */
+.product-buy-btn {
+  display: inline-block;
+  background-color: #415A77;
+  color: #E0E1DD;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  grid-column: 2 / 3;
+}
+
+
